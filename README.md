@@ -1,3 +1,3 @@
 # discourse-newpage
 
-a temmporary learning exercise only 
+a temporary learning exercise only 
