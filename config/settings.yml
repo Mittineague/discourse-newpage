@@ -1,0 +1,4 @@
+plugins:
+  mitt_newpage_enabled:
+    default: true
+    client: true
