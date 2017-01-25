@@ -1,3 +1,5 @@
 export default function() {
-  this.route('newpage', { path: '/newpages#index', resetNamespace: true });
+	this.route('newpage', function(){
+	  this.route('index', {path: '/'});
+	});
 }
