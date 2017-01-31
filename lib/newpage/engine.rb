@@ -3,9 +3,10 @@ module DiscourseNewpage
     isolate_namespace DiscourseNewpage
 
     config.after_initialize do
-		Discourse::Application.routes.append do
-			mount ::DiscourseNewpage::Engine, at: "/"
-		end
+      Discourse::Application.routes.append do
+        mount ::DiscourseNewpage::Engine, at: "/"
+      end
     end
+
   end
 end

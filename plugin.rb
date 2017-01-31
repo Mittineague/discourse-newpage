@@ -1,6 +1,6 @@
 # name: discourse-newpage
 # about: learning exercise
-# version: 0.1
+# version: 0.2
 # authors: Mittineague
 # url: https://github.com/Mittineague/discourse-newpage.git
 
