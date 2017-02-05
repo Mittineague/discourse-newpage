@@ -31,10 +31,15 @@ test("Newpage Page", () => {
     ok(find("ul.mitt_newpage li:contains('system')"), 'list displays system');
     ok(find("ul.mitt_newpage li:contains('PaddingtonBrown TL 7')"), 'list displays PaddingtonBrown TL 7');
 
-    ok(find(".hamburger-panel div ul li a[href='/newpage']"), 'hamburger menu has link');
-    strictEqual(find(".hamburger-panel div ul li a[href='/newpage']").attr('title'), 'Newpage', 'hamburger menu link has title');
-    strictEqual(find(".hamburger-panel div ul li a[href='/newpage']").text(), 'Newpage', 'hamburger menu has link text');
-
     ok(find("div.mitt_div"), 'custom footer was found');
   });
+
+  click('#toggle-hamburger-menu');
+
+  andThen(() => {
+    ok(find(".hamburger-panel div ul li a[href='/newpage']"), 'hamburger menu has link');
+    strictEqual(find(".hamburger-panel div ul li a[href='/newpage']").attr('title'), 'Newpage', 'hamburger menu link has title');
+    strictEqual(find(".hamburger-panel div ul li a[href='/newpage']").text().trim(), 'Newpage', 'hamburger menu has link text');
+  });
+
 });
