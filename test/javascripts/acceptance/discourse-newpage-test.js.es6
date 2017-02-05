@@ -19,7 +19,7 @@ acceptance("Discourse Newpage", {
 });
 
 test("Newpage Page", () => {
-
+  expect(10);
   visit("/newpage");
 
   andThen(() => {
