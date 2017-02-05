@@ -12,6 +12,8 @@
       /discourse  
         discourse-newpage-route-map.js.es6  
         (nest newpage index /)  
+        /initializers  
+          newpage.js.es6  
         /routes  
           newpage-index.js.es6  
           (model() setupController())  
@@ -21,6 +23,7 @@
   /config  
     settings.yml  
     /locales  
+      client.en.yml  
       server.en.yml  
   /docs  
     directory-contents.md  
@@ -29,7 +32,7 @@
     /newpage  
       engine.rb  
       (routes.append mount)  
-  /tesr  
+  /test  
     /javascripts  
       /acceptance  
         discourse-newpage-test.js.es6  

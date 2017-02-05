@@ -1,3 +1,18 @@
+
+**version 0.3**  
+`assets/javascripts/discourse/routes/newpage-index.js.es6`  
+added showFooter  
+`plugin.rb`  
+added custom footer code  
+`test/javascripts/acceptance/discourse-newpage-test.js.es6`  
+added qunit test for showFooter and hambuger-menu    
+`app/controllers/discourse_newpage/newpages_controller.rb`  
+optimized User JSON  
+`assets/javascripts/discourse/initializers/discourse-newpage.js.es6`  
+added api.decorateWidget "hamburger-menu:generalLinks"  
+`config/locales/client.en.yml`  
+added text for hambuger menu link  
+
 **version 0.2**  
 `assets/javascripts/discourse/controllers/newpage-index.js.es6`  
 and  

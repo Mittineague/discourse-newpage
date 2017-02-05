@@ -6,5 +6,12 @@ export default Discourse.Route.extend({
 
   setupController(controller, model) {
     controller.setProperties({ model });
+  },
+
+  actions: {
+    didTransition() {
+      this.controllerFor("application").set("showFooter", true);
+      return true;
+    }
   }
 });
