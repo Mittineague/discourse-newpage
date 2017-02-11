@@ -7,7 +7,7 @@
 enabled_site_setting :mitt_newpage_enabled
 
 Discourse::Application.routes.append do
-  get '/newpage' => 'discourse_newpage/newpages#my_page'
+  get '/newpage' => 'discourse_newpage/newpages#pagedata'
 end
 
 load File.expand_path('../lib/newpage/engine.rb', __FILE__)

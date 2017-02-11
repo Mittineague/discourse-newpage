@@ -1,3 +1,5 @@
+**version 0.4**  
+`spec/controllers/newpage_controller_spec.rb`  
 
 **version 0.3**  
 `assets/javascripts/discourse/routes/newpage-index.js.es6`  

@@ -6,7 +6,7 @@
     /controllers  
       /discourse_newpage  
          newpages_controller.rb  
-         (def my_page render json)  
+         (def pagedata render json)  
   /assets  
     /javascripts  
       /discourse  
@@ -32,6 +32,13 @@
     /newpage  
       engine.rb  
       (routes.append mount)  
+  /spec
+    /controllers
+      newpage_controller_spec.rb
+    /requests
+      newpahe_requests_spec.rb
+    /routing
+      newpage_routing_spec.rb
   /test  
     /javascripts  
       /acceptance  
