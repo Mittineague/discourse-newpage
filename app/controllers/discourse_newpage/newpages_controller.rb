@@ -3,7 +3,7 @@ module DiscourseNewpage
 
     def pagedata
 #      user_obj = User.where("id >= ?", -1)
-     user_obj = User.pluck(:username, :trust_level).map{|p| {username: p[0], trust_level: p[1]}}
+      user_obj = User.pluck(:username, :trust_level).map{|p| {username: p[0], trust_level: p[1]}}
       test_obj = [{username: "PaddingtonBrown", trust_level: 7}]
       combined_obj = user_obj + test_obj
       render :json => combined_obj

@@ -33,8 +33,6 @@
       engine.rb  
       (routes.append mount)  
   /spec
-    /controllers
-      newpage_controller_spec.rb
     /requests
       newpahe_requests_spec.rb
     /routing
